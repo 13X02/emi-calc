@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+/* From Uiverse.io by satisshTechie */ 
+.PB-range-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background: #D5DBE1;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.PB-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #000000;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.PB-range-slider::-webkit-slider-thumb:hover {
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.16);
+  transition: 0.3s ease-in-out;
+}
+
+.PB-range-slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.PB-range-slider-div {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #C6CACE;
+  box-shadow: 0px 1px 2px 0px #1F1E241F;
 }
 
-.App-link {
-  color: #61dafb;
+.PB-range-slidervalue {
+  font-weight: 600;
+}
+.amount{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.iparea{
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 10px;
+}
+/* From Uiverse.io by tiagoadag1203 */ 
+.input {
+  width: 190px;
+  background-color: rgb(166, 230, 161);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: black;
+  height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input:focus {
+  animation: rotateShadow 2s infinite linear;
+}
+
+@keyframes rotateShadow {
+  0% {
+    box-shadow: -2px -2px 0px 0px rgb(46, 211, 59), 2px 2px 0px 0px #2ac76b;
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    box-shadow: -2px 2px 0px 0px rgb(46, 211, 59), 2px -2px 0px 0px #2ac76b;
   }
+  50% {
+    box-shadow: 2px 2px 0px 0px rgb(46, 211, 59), -2px -2px 0px 0px #2ac76b;
+  }
+  75% {
+    box-shadow: 2px -2px 0px 0px rgb(46, 211, 59), -2px 2px 0px 0px #2ac76b;
+  }
+  100% {
+    box-shadow: -2px -2px 0px 0px rgb(46, 211, 59), 2px 2px 0px 0px #2ac76b;
+  }
+}
+
+.container{
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 30px;
+  box-shadow: 10px 10px 5px 2px gray;
+  
+
 }
